@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descreve aí - Gerador de Guias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="logo" href="/">
+                <img src="icone.png" alt="Ícone Descreve aí" class="logo-image">
+                <span>Descreve aí</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Converta Imagens em <br/>
+                <span>Guias Passo a Passo</span></h1>
+            <p>Cole as fotos do procedimento abaixo. Nossa IA gerará um guia visual numerado pronto para copiar.</p>
+        </section> 
+
+        <div class="grid-cards">
+            <div class="card">
+                <div class="card-header">
+                    <span class="icon">🔗</span> Cole as suas imagens aqui
+                </div>
+                    <div class="drop-zone" id="drop-zone" tabindex="0">
+                        <div class="placeholder">
+                            <p>Clique aqui e dê <b>Ctrl + V</b> para colar fotos <br> ou arraste os arquivos</p>
+                        </div>
+                        <div id="preview-container" style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;"></div>
+                    </div>  
+                <button class="btn-primary" id="btn-gerar">GERAR PASSOS →</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="icon">🤖</span> Descrição das imagens pela IA
+                </div>
+                <textarea id="resultado" readonly placeholder="O guia aparecerá aqui..."></textarea>
+                <button class="btn-secondary" id="btn-copiar">COPIAR →</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a class="logo-footer" href="/">
+                <img src="icone.png" alt="Ícone" class="logo-image">
+                <span>Descreve aí</span>
+            </a>
+            <div class="divider"></div> <p>Transformando imagens em guias visuais passo a passo de forma simples e gratuita.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
